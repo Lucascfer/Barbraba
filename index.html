@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbraba</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Barbraba</h1>
+        <nav>
+            <ul>
+                <li><a class="nav-itens" href="#sobre">Sobre a Streamer</a></li>
+                <li><a class="nav-itens" href="#horarios">Horários de Streaming</a></li>
+                <li><a class="nav-itens" href="#pix">PIX</a></li>
+                <li><a class="nav-itens" href="#redes-sociais">Redes Sociais</a></li>
+                <li><a class="nav-itens" href="#ao-vivo">Assista à Live Agora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <div id="apresentacao">
+                <div id="twitch-embede"></div>
+
+                <div id="teste" style="width: 100%; height: 400px; background-color: brown;"></div>
+
+                <h3 id="bem-vindo">Bem-vindo! Eu sou a Bárbara, tenho 23 anos e sou Criadora de Conteúdo Oficial de
+                    Genshin Impact. Espero que gostem daqui <br>❤</h3>
+
+            </div>
+            <img id="pinguim" src="src/images/barbraba.jpg" alt="Pinguim Brabo">
+        </div>
+
+        <section id="sobre">
+            <h2>Sobre a Streamer</h2>
+            <p>Eu sou a Bárbara, tenho 23 anos e comecei a me interessar em jogar jogos ao invés de só
+                assistir há pouco tempo. </p> <br>
+            <p>Gosto muito de conversar e streamo principalmente Genshin Impact e alguns jogos focados em história! </p>
+            <br>
+            <p>Meus mains são Kokomi dps, Yoimiya, Diluc (infelizmente), Albedo e Zuzuha ❤.
+            </p><br>
+            <p>Sou obcecada com lore não necessariamente ligada ao plot principal e gosto muito de casais 2D. </p> <br>
+            <p>
+                Espero que gostem das lives 💕 </p>
+        </section>
+
+        <section id="horarios">
+            <h2>Horários de Streaming</h2>
+            <h3>13/02 - 19/02</h3>
+            <ul id="semana">
+                <li><span>Segunda-feira</span> 18h às 21h</li>
+                <li><span>Terça-feira</span> 18h às 21h</li>
+                <li><span>Quarta-feira</span> 14h às 17h</li>
+                <li><span>Quinta-feira</span> 14h às 17h</li>
+                <li><span>Sexta-feira</span> 20h às 23h</li>
+                <li><span>Sábado</span> 20h às 23h</li>
+                <li><span>Domingo</span> 20h às 23h</li>
+            </ul>
+        </section>
+
+        <section id="pix">
+            <h2>PIX</h2>
+            <p>Se quiser me apoiar de um jeito diferente da própria Twitch e ajudar com as diversas metas do canal um
+                bom
+                jeito é realizando donate por livepix!
+                Me ajuda bastante e você ainda pode mandar uma mensagem de voz junto 🤧❤
+                Doações não são reembolsáveis!
+            </p>
+            <a href="https://livepix.gg/barbraba" class="btn">Faça um PIX</a>
+        </section>
+
+        <section id="ao-vivo">
+            <a href="#" class="btn">Assista à Live Agora</a>
+        </section>
+    </main>
+    <footer>
+        <ul id="redes-sociais">
+            <li><a href="https://twitter.com/barbrabaon">Twitter</a></li>
+            <li><a href="https://www.instagram.com/barbraba1/">Instagram</a></li>
+            <li><a href="https://discord.com/invite/PFnGUs2Pb5">Discord</a></li>
+        </ul>
+        <p>Copyright © 2023 - Todos os direitos reservados</p>
+        <h3>DEVELOPED BY <span>LUCAS</span></h3>
+    </footer>
+
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            channel: "barbraba",
+            width: "75%",
+            height: 350,
+        });
+    </script>
+</body>
+
+</html>
