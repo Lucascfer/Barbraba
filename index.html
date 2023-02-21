@@ -6,30 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbraba</title>
-    <link rel="stylesheet" href="src/style.css">
+
     <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="src/CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
     <header>
-        <h1>Barbraba</h1>
+        <a href="https://www.twitch.tv/barbraba" target="_blank">
+            <h1>Barbraba</h1>
+        </a>
         <nav>
             <ul>
-                <li><a class="nav-itens" href="#sobre">Sobre a Streamer</a></li>
-                <li><a class="nav-itens" href="#horarios">Horários de Streaming</a></li>
-                <li><a class="nav-itens" href="#pix">PIX</a></li>
-                <li><a class="nav-itens" href="#redes-sociais">Redes Sociais</a></li>
-                <li><a class="nav-itens" href="#ao-vivo">Assista à Live Agora</a></li>
+                <li><a class="nav-itens" href="#sobre">Sobre Mim</a></li>
+                <li><a class="nav-itens" href="#horarios">Horários</a></li>
+                <li><a class="nav-itens" href="#pix">Apoio</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="content">
             <div id="apresentacao">
-                <div id="twitch-embede"></div>
-
-                <div id="teste" style="width: 100%; height: 400px; background-color: brown;"></div>
+                <div id="twitch-embed" style="box-shadow: 0px -10px 32px 0px rgba(0,0,0,0.48);"></div>
 
                 <h3 id="bem-vindo">Bem-vindo! Eu sou a Bárbara, tenho 23 anos e sou Criadora de Conteúdo Oficial de
                     Genshin Impact. Espero que gostem daqui <br>❤</h3>
@@ -40,51 +41,101 @@
 
         <section id="sobre">
             <h2>Sobre a Streamer</h2>
-            <p>Eu sou a Bárbara, tenho 23 anos e comecei a me interessar em jogar jogos ao invés de só
-                assistir há pouco tempo. </p> <br>
-            <p>Gosto muito de conversar e streamo principalmente Genshin Impact e alguns jogos focados em história! </p>
-            <br>
-            <p>Meus mains são Kokomi dps, Yoimiya, Diluc (infelizmente), Albedo e Zuzuha ❤.
-            </p><br>
-            <p>Sou obcecada com lore não necessariamente ligada ao plot principal e gosto muito de casais 2D. </p> <br>
             <p>
-                Espero que gostem das lives 💕 </p>
+                Eu sou a Bárbara, tenho 23 anos e comecei a me interessar em jogar jogos ao invés de só
+                assistir há pouco tempo.
+            </p>
+            <br>
+            <p>
+                Gosto muito de conversar e streamo principalmente Genshin Impact e alguns jogos focados em história!
+            </p>
+            <br>
+            <p>
+                Meus mains são Kokomi dps, Yoimiya, Diluc (infelizmente), Albedo e Zuzuha ❤.
+            </p>
+            <br>
+            <p>
+                Sou obcecada com lore não necessariamente ligada ao plot principal e gosto muito de casais 2D.
+            </p>
+            <br>
+            <p>
+                Espero que gostem das lives 💕
+            </p>
+            <h4>Sobre Mim</h4>
+            <div class="efeito">O</div>
         </section>
 
         <section id="horarios">
             <h2>Horários de Streaming</h2>
             <h3>13/02 - 19/02</h3>
             <ul id="semana">
-                <li><span>Segunda-feira</span> 18h às 21h</li>
-                <li><span>Terça-feira</span> 18h às 21h</li>
-                <li><span>Quarta-feira</span> 14h às 17h</li>
-                <li><span>Quinta-feira</span> 14h às 17h</li>
-                <li><span>Sexta-feira</span> 20h às 23h</li>
-                <li><span>Sábado</span> 20h às 23h</li>
-                <li><span>Domingo</span> 20h às 23h</li>
+                <li><span>Segunda-feira</span>
+                    Sem live
+                </li>
+                <li><span>Terça-feira</span>
+                    Live 9h <br>
+                    Genshin Impact <br>
+                    Honkai: Star Rail
+                </li>
+                <li><span>Quarta-feira</span>
+                    Live 9h <br>
+                    Genshin Impact <br>
+                    Honkai: Star Rail
+                </li>
+                <li><span>Quinta-feira</span>
+                    Sem live
+                </li>
+                <li><span>Sexta-feira</span>
+                    Live 9h <br>
+                    Genshin Impact <br>
+                    Honkai: Star Rail <br>
+                    Tower of Fantasy
+                </li>
+                <li><span>Sábado</span>
+                    Live 20h <br>
+                    Genshin Impact <br>
+                    Among Us
+                </li>
+                <li><span>Domingo</span>
+                    Live 20h <br>
+                    Genshin Impact <br>
+                    Ace Attorney
+                </li>
             </ul>
+            <h4>Horários</h4>
         </section>
 
         <section id="pix">
-            <h2>PIX</h2>
-            <p>Se quiser me apoiar de um jeito diferente da própria Twitch e ajudar com as diversas metas do canal um
-                bom
-                jeito é realizando donate por livepix!
-                Me ajuda bastante e você ainda pode mandar uma mensagem de voz junto 🤧❤
-                Doações não são reembolsáveis!
-            </p>
-            <a href="https://livepix.gg/barbraba" class="btn">Faça um PIX</a>
+            <h2>APOIO</h2>
+            <div id="conteiner-pix">
+                <p class="card-text">
+                    Se quiser me apoiar de um jeito diferente da própria Twitch e ajudar com as diversas metas do canal
+                    um
+                    bom jeito é realizando donate por livepix!
+                    <br>
+                    Me ajuda bastante e você ainda pode mandar uma mensagem de voz junto 🤧❤
+                    <br>
+                    Doações não são reembolsáveis!
+                </p>
+                <div class="card-pix">
+                    <a href="https://livepix.gg/barbraba" target="_blank" class="btn">Faça um PIX</a>
+                </div>
+            </div>
+            <div class="efeito">O</div>
+            <h4>Apoio</h4>
         </section>
 
         <section id="ao-vivo">
-            <a href="#" class="btn">Assista à Live Agora</a>
+            <a href="https://www.twitch.tv/barbraba" target="_blank" class="btn">Assista à Live Agora</a>
         </section>
     </main>
     <footer>
         <ul id="redes-sociais">
-            <li><a href="https://twitter.com/barbrabaon">Twitter</a></li>
-            <li><a href="https://www.instagram.com/barbraba1/">Instagram</a></li>
-            <li><a href="https://discord.com/invite/PFnGUs2Pb5">Discord</a></li>
+            <li><a href="https://twitter.com/barbrabaon" alt="twitter"><i class="fab fa-twitter"></i>
+            </a></li>
+            <li><a href="https://www.instagram.com/barbraba1/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://discord.com/invite/PFnGUs2Pb5"><i class="fab fa-discord"></i></a></li>
+            <li><a href="https://www.twitch.tv/barbraba"><i class="fab fa-twitch"></i></a></li>
         </ul>
         <p>Copyright © 2023 - Todos os direitos reservados</p>
         <h3>DEVELOPED BY <span>LUCAS</span></h3>
@@ -93,8 +144,8 @@
     <script type="text/javascript">
         new Twitch.Player("twitch-embed", {
             channel: "barbraba",
-            width: "75%",
-            height: 350,
+            width: "100%",
+            height: 400,
         });
     </script>
 </body>

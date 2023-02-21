@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Mynerve&display=swap');
 
+:root {
+  --cor-principal: #29A587;
+  --cor-secundaria: #F2EEE7;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -19,14 +24,15 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: #000;
+  color: #333030;
   list-style: none;
   text-align: justify;
   text-align-last: center;
 }
 
 body {
-  background-color: #F2EEE7;
+  background-color: var(--cor-secundaria);
+  overflow-x: hidden;
 }
 
 header {
@@ -38,14 +44,14 @@ header {
 }
 
 header h1 {
-  color: #29A587;
+  color: var(--cor-principal);
   font-family: 'Mynerve', cursive;
   font-size: 3rem;
   margin: 0;
 }
 
 .nav-itens {
-  color: #29A587;
+  color: var(--cor-principal);
   z-index: 1;
 }
 
@@ -102,7 +108,7 @@ h2,
   font-family: 'Mynerve', cursive;
   font-weight: bold;
   font-size: 2rem;
-  color: #29A587;
+  color: var(--cor-principal);
 }
 
 p {
@@ -113,6 +119,19 @@ p {
 
 #sobre p {
   margin: 0 auto;
+}
+
+.efeito {
+  box-shadow: 0px 0px 300px 50px #5aac7e;
+  width: 0px;
+  color: transparent;
+  position: absolute;
+  z-index: -6;
+}
+
+.efeito:nth-of-type(2) {
+  top: -10px;
+  right: 0;
 }
 
 section {
@@ -135,12 +154,12 @@ section {
   flex-wrap: wrap;
 }
 
-#semana>li {
+#semana li {
   display: flex;
   margin: 1.8rem;
   padding: 2rem;
   position: relative;
-  background-color: #ADE3E3;
+  background-color: #ade3e3a0;
   width: 190px;
   height: 200px;
   border-radius: 30px;
@@ -149,6 +168,7 @@ section {
   text-align: center;
   justify-content: center;
   font-size: 1.2rem;
+  line-height: 2;
 }
 
 #semana>li>span {
@@ -164,15 +184,58 @@ section {
   font-size: 1rem;
 }
 
-footer {
-  background-color: #e9e9e9;
-  padding: 20px;
-  text-align: center;
+#conteiner-pix {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 2rem;
+  width: 70%;
+  margin: auto;
 }
 
-footer p {
-  font-size: 0.8rem;
-  margin: 0;
+.card-text {
+  width: 45%;
+  line-height: 2;
+}
+
+.card-pix {
+  font-weight: bold;
+  padding: 25px;
+  margin: auto;
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+  background-image: url(../images/logo-pix.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-pix .btn{
+  margin-top: 7rem;
+}
+
+section {
+  position: relative;
+}
+
+h4 {
+  color: var(--cor-principal);
+  font-family: 'Mynerve', cursive;
+  z-index: -5;
+  font-size: 10rem;
+  opacity: 0.1;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  top: auto;
+  right: 15rem;
+  left: 15rem;
+  text-align-last: center;
+  display: flex;
 }
 
 .btn:link,
@@ -186,6 +249,9 @@ footer p {
   display: inline-block;
   transition: all .2s;
   position: relative;
+  backdrop-filter: blur(15px);
+  font-family: 'Mynerve', cursive;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -214,4 +280,36 @@ footer p {
   background-color: rgb(0, 238, 255);
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0;
+}
+
+
+footer {
+  background-color: #99B1AD;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  text-align: center;
+}
+
+footer p {
+  width: 45%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+footer ul, h3{
+  padding-top: 2rem;
+}
+
+footer i {
+  font-size: 1.8rem;
+}
+
+footer h3 span {
+  color: var(--cor-secundaria);
 }
