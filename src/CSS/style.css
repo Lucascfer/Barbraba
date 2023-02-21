@@ -213,7 +213,7 @@ section {
   background-position: center center;
 }
 
-.card-pix .btn{
+.card-pix .btn {
   margin-top: 7rem;
 }
 
@@ -282,6 +282,59 @@ h4 {
   opacity: 0;
 }
 
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flexbox;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+label {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  justify-content: flex-start
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #1b1b1b;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+#enviar {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  background-color: var(--cor-principal);
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
 footer {
   background-color: #99B1AD;
@@ -302,7 +355,8 @@ footer p {
   margin-right: 2rem;
 }
 
-footer ul, h3{
+footer ul,
+h3 {
   padding-top: 2rem;
 }
 
@@ -312,4 +366,46 @@ footer i {
 
 footer h3 span {
   color: var(--cor-secundaria);
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #content {
+    flex-direction: column-reverse;
+  }
+
+  #pinguim,
+  #twitch-embed,
+  #bem-vindo {
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #bem-vindo {
+    padding: 0;
+  }
+
+  #conteiner-pix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-text {
+    padding: auto;
+    margin: auto;
+    width: auto;
+  }
+
+  .card-pix {
+    margin-top: 2rem;
+  }
 }

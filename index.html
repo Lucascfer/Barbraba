@@ -24,19 +24,24 @@
                 <li><a class="nav-itens" href="#sobre">Sobre Mim</a></li>
                 <li><a class="nav-itens" href="#horarios">Horários</a></li>
                 <li><a class="nav-itens" href="#pix">Apoio</a></li>
+                <li><a class="nav-itens" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="content">
-            <div id="apresentacao">
-                <div id="twitch-embed" style="box-shadow: 0px -10px 32px 0px rgba(0,0,0,0.48);"></div>
+        <div class="container">
+            <div id="content">
+                <div id="apresentacao">
+                    <div id="twitch-embed" style="box-shadow: 0px -10px 32px 0px rgba(0,0,0,0.48);"></div>
 
-                <h3 id="bem-vindo">Bem-vindo! Eu sou a Bárbara, tenho 23 anos e sou Criadora de Conteúdo Oficial de
-                    Genshin Impact. Espero que gostem daqui <br>❤</h3>
+                    <h3 id="bem-vindo">Bem-vindo! Eu sou a Bárbara, tenho 23 anos e sou Criadora de Conteúdo Oficial de
+                        Genshin Impact. Espero que gostem daqui <br>❤
+                    </h3>
 
+                </div>
+                <img id="pinguim" src="src/images/barbraba.jpg" alt="Pinguim Brabo">
             </div>
-            <img id="pinguim" src="src/images/barbraba.jpg" alt="Pinguim Brabo">
+            <i class="fa-solid fa-chevron-down"></i>
         </div>
 
         <section id="sobre">
@@ -106,7 +111,7 @@
         </section>
 
         <section id="pix">
-            <h2>APOIO</h2>
+            <h2>Apoio</h2>
             <div id="conteiner-pix">
                 <p class="card-text">
                     Se quiser me apoiar de um jeito diferente da própria Twitch e ajudar com as diversas metas do canal
@@ -125,6 +130,30 @@
             <h4>Apoio</h4>
         </section>
 
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Sua mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div id="enviar"><input type="submit" value="Enviar"></div>
+            </form>
+            <div class="efeito">O</div>
+            <h4>Contato</h4>
+        </section>
+
         <section id="ao-vivo">
             <a href="https://www.twitch.tv/barbraba" target="_blank" class="btn">Assista à Live Agora</a>
         </section>
@@ -132,7 +161,7 @@
     <footer>
         <ul id="redes-sociais">
             <li><a href="https://twitter.com/barbrabaon" alt="twitter"><i class="fab fa-twitter"></i>
-            </a></li>
+                </a></li>
             <li><a href="https://www.instagram.com/barbraba1/"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://discord.com/invite/PFnGUs2Pb5"><i class="fab fa-discord"></i></a></li>
             <li><a href="https://www.twitch.tv/barbraba"><i class="fab fa-twitch"></i></a></li>
